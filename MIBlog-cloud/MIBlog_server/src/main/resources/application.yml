@@ -1,0 +1,32 @@
+server:
+  port: 9005
+  servlet:
+    context-path: /api
+spring:
+  application:
+    name: MIBLOGSERVER
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  datasource:
+    url: jdbc:mysql://localhost:3306/mlblog?zeroDateTimeBehavior=CONVERT_TO_NULL&useUnicode=true&useSSL=false&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+    hikari:
+      max-lifetime: 30000
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 50MB
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #配置Nacos地址
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+mybatis:
+  mapperLocations: classpath:mapper/*apper.xml

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="MIBlog_common" />
+        <module name="MIBlog_gateway" />
+        <module name="MIBlog_server" />
+        <module name="MIBlog_gateway9527" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="12">
+      <module name="MIBlog-cloud" target="1.8" />
+      <module name="MIBlog_common" target="1.8" />
+      <module name="MIBlog_gateway9527" target="1.8" />
+      <module name="MIBlog_server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
